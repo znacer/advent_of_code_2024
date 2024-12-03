@@ -1,10 +1,12 @@
 pub mod day1;
 pub mod day2;
+pub mod day3;
 use std::{collections::HashMap, sync::Arc};
 
 use clap::{Parser, Subcommand};
 use day1::Day1;
 use day2::Day2;
+use day3::Day3;
 
 pub enum Puzzle {
     Example,
@@ -27,6 +29,7 @@ pub fn get_day(day: usize) -> Option<Arc<dyn DaySolutions>> {
     let mut days: HashMap<usize, Arc<dyn DaySolutions>> = HashMap::new();
     days.insert(1, Arc::new(Day1));
     days.insert(2, Arc::new(Day2));
+    days.insert(3, Arc::new(Day3));
 
     days.get(&day).cloned()
 }
