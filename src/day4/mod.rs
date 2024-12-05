@@ -1,7 +1,5 @@
 use std::fs;
 
-use itertools::Itertools;
-
 use crate::{DaySolutions, Puzzle};
 
 #[derive(Clone)]
