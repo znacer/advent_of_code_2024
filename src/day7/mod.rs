@@ -7,7 +7,7 @@ use radix_fmt::radix;
 use crate::{DaySolutions, Puzzle};
 
 #[derive(Clone)]
-pub struct Day7;
+pub struct Problem;
 
 fn load_problem(puzzle: Puzzle) -> String {
     let content = match puzzle {
@@ -156,7 +156,7 @@ impl Equation {
     }
 }
 
-impl DaySolutions for Day7 {
+impl DaySolutions for Problem {
     fn part1(&self, puzzle: Puzzle) -> String {
         let input = load_problem(puzzle);
         let pb = parse_pb(&input);

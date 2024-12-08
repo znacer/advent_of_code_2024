@@ -4,7 +4,7 @@ use std::{collections::HashMap, fs};
 use crate::{DaySolutions, Puzzle};
 
 #[derive(Clone)]
-pub struct Day1;
+pub struct Problem;
 
 fn load_problem(puzzle: Puzzle) -> String {
     let content = match puzzle {
@@ -28,7 +28,7 @@ fn read_lists(pb: String) -> (Vec<i32>, Vec<i32>) {
     (l_list, r_list)
 }
 
-impl DaySolutions for Day1 {
+impl DaySolutions for Problem {
     fn part1(&self, puzzle: Puzzle) -> String {
         let pb_string = load_problem(puzzle);
         let (mut l_list, mut r_list) = read_lists(pb_string);

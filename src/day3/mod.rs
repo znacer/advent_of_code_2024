@@ -4,7 +4,7 @@ use std::fs;
 use crate::{DaySolutions, Puzzle};
 
 #[derive(Clone)]
-pub struct Day3;
+pub struct Problem;
 
 fn load_problem(puzzle: Puzzle) -> String {
     let content = match puzzle {
@@ -40,7 +40,7 @@ fn read_mul(elt: &str) -> i32 {
     }
     result
 }
-impl DaySolutions for Day3 {
+impl DaySolutions for Problem {
     fn part1(&self, puzzle: Puzzle) -> String {
         let pb = load_problem(puzzle);
         let result = read_mul(&pb);

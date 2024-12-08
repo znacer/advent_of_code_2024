@@ -3,7 +3,7 @@ use std::{collections::{HashMap, VecDeque}, fs};
 use crate::{DaySolutions, Puzzle};
 
 #[derive(Clone)]
-pub struct Day5;
+pub struct Problem;
 
 
 fn load_problem(puzzle: Puzzle) -> String {
@@ -93,7 +93,7 @@ fn reorder_update(update: &[i32], rules: &[(i32, i32)]) -> Vec<i32> {
     sorted
 }
 
-impl DaySolutions for Day5 {
+impl DaySolutions for Problem {
     fn part1(&self, puzzle: Puzzle) -> String {
         let input = load_problem(puzzle);
         let (rules, updates) = parse_problem(&input);

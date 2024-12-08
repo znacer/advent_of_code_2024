@@ -5,7 +5,7 @@ use itertools::Itertools;
 use crate::{DaySolutions, Puzzle};
 
 #[derive(Clone)]
-pub struct Day2;
+pub struct Problem;
 
 fn load_problem(puzzle: Puzzle) -> String {
     let content = match puzzle {
@@ -63,7 +63,7 @@ fn is_almost_safe(line: &Vec<i32>) -> bool {
     false
 }
 
-impl DaySolutions for Day2 {
+impl DaySolutions for Problem {
     fn part1(&self, puzzle: Puzzle) -> String {
         let pb = load_problem(puzzle);
         let line_lists = read_lists(pb);

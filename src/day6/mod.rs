@@ -1,12 +1,12 @@
 use core::panic;
-use std::{collections::HashSet, fmt::Display, fs, ops, process::Output};
+use std::{collections::HashSet, fmt::Display, fs, ops};
 
 use itertools::Itertools;
 
 use crate::{DaySolutions, Puzzle};
 
 #[derive(Clone)]
-pub struct Day6;
+pub struct Problem;
 
 fn load_problem(puzzle: Puzzle) -> String {
     let content = match puzzle {
@@ -215,7 +215,7 @@ impl Map {
         }
     }
 }
-impl DaySolutions for Day6 {
+impl DaySolutions for Problem {
     fn part1(&self, puzzle: Puzzle) -> String {
         let input = load_problem(puzzle);
         let mut pb = Map::parse_problem(&input);

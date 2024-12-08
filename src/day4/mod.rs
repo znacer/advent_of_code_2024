@@ -3,7 +3,7 @@ use std::fs;
 use crate::{DaySolutions, Puzzle};
 
 #[derive(Clone)]
-pub struct Day4;
+pub struct Problem;
 
 fn load_problem(puzzle: Puzzle) -> String {
     let content = match puzzle {
@@ -158,7 +158,7 @@ fn check_x_mas(position: (usize, usize), pb: &Vec<Vec<char>>) -> bool {
         return false;
     }
 }
-impl DaySolutions for Day4 {
+impl DaySolutions for Problem {
     fn part1(&self, puzzle: Puzzle) -> String {
         let pb = load_problem(puzzle);
         let pb = parse_problem(&pb);
