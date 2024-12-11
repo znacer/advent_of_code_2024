@@ -1,4 +1,5 @@
 pub mod day1;
+pub mod day10;
 pub mod day2;
 pub mod day3;
 pub mod day4;
@@ -6,6 +7,7 @@ pub mod day5;
 pub mod day6;
 pub mod day7;
 pub mod day8;
+pub mod day9;
 use std::{collections::HashMap, sync::Arc};
 
 use clap::{Parser, Subcommand};
@@ -38,6 +40,8 @@ pub fn get_day(day: usize) -> Option<Arc<dyn DaySolutions>> {
     days.insert(6, Arc::new(day6::Problem));
     days.insert(7, Arc::new(day7::Problem));
     days.insert(8, Arc::new(day8::Problem));
+    days.insert(9, Arc::new(day9::Problem));
+    days.insert(10, Arc::new(day10::Problem));
 
     days.get(&day).cloned()
 }
