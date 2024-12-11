@@ -1,5 +1,6 @@
 pub mod day1;
 pub mod day10;
+pub mod day11;
 pub mod day2;
 pub mod day3;
 pub mod day4;
@@ -42,6 +43,7 @@ pub fn get_day(day: usize) -> Option<Arc<dyn DaySolutions>> {
     days.insert(8, Arc::new(day8::Problem));
     days.insert(9, Arc::new(day9::Problem));
     days.insert(10, Arc::new(day10::Problem));
+    days.insert(11, Arc::new(day11::Problem));
 
     days.get(&day).cloned()
 }
